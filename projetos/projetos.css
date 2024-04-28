@@ -1,0 +1,11 @@
+/*ajustar as cores de fundo dos modais*/
+
+
+main {
+    margin-top: 65px; 
+}
+@media (max-width: 767px) {
+    .modal {
+        top: 10%; /* Ajustar a posição vertical dos modais */
+    }
+}

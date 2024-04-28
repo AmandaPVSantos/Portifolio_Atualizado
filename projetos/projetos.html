@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/projetos/projetos.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon"  type="image/x-icon">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="/assests/Avatar-Maker.svg" type="image/x-icon">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top"> <!--bg-body-tertiary-->
+          <div class="container-fluid"  id="navbar">
+            <a class="navbar-brand" href="#"><img src="/assests/Avatar-Maker.svg" alt="Logo da cafeteria Sereneatto"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+              <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" onclick="navigateToPage('/index.html')">Início</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="navigateToPage('/sobre/sobre.html')">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="navigateToPage('/projetos/projetos.html')">Pojetos</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="navigateToPage('/contatos/contato.html')">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <h2 class="p-5 fw-bold">
+            Projetos
+        </h2>
+        <div class="row mx-0"> <!-- Adicionando a classe justify-content-center para centralizar os cards -->
+            <div class="col-12 col-md-6 col-lg-4 mb-3"> <!-- Adicionando a classe mb-3 para espaçamento inferior -->
+                <div class="card border-0 mx-auto btn" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal-1">
+                    <img src="/assests/landing-page-cafeteria.jpg" class="card-img-top" alt="Imagem do projeto Cafeteria Serenatto">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">
+                            Cafeteria Serenatto
+                        </h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 mb-3"> <!-- Adicionando a classe mb-3 para espaçamento inferior -->
+                <div class="card border-0 mx-auto btn" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal-2">
+                    <img src="/assests/e-commerce.jpg" class="card-img-top" alt="Imagem do projeto E-commerce">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">
+                            E-commerce
+                        </h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 mb-3"> <!-- Adicionando a classe mb-3 para espaçamento inferior -->
+                <div class="card border-0 mx-auto btn" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal-3">
+                    <img src="/assests/projeto-clone-spotify.jpg" class="card-img-top" alt="Imagem do projeto Clone do Spotify">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">
+                            Clone do Spotify
+                        </h3>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-12 col-md-6 col-lg-4 mb-3"> <!-- Adicionando a classe mb-3 para espaçamento inferior -->
+                <div class="card border-0 mx-auto btn" style="width: 18rem;" data-bs-toggle="modal" data-bs-target="#modal-4">
+                    <img src="/assests/projeto-notes.jpg" class="card-img-top" alt="Imagem do projeto Notes">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">
+                            Notes
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    </main>
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafeteria Serenatto</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="/assests/landing-page-cafeteria.jpg" class="w-100" alt="Imagem do projeto Cafeteria Serenatto">
+            <p>
+              Fazer esse projeto foi uma experiência incrível, pois pude aprender um pouco mais sobre bootstrap.
+            </p>
+            <p>
+              Esse projeto trata-se de uma landing page da cafeteria Serenatto.
+            </p>
+            <p>
+              Foi utilizado as seguintes tecnologias: HTML, CSS, JavaScript, Bootstrap.
+            </p>
+            <p>
+              Para visualizar o site:
+              <a href="https://asantosvp.github.io/landing-page-de-cafeteria/" target="_blank">Clique aqui</a>
+          </p>
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-secondary botao-padrao border-0" id="botao-padrao" data-bs-dismiss="modal">Fechar janela</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 2-->
+    <div class="modal fade" id="modal-2" tabindex="-2" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Cafés Especiais</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="/assests/e-commerce.jpg" class="w-100" alt="Imagem do projeto E-commerce">
+            <p>
+              Esse projeto foi desenvolvido durante um teste para vaga de estágio para Front-end.
+            </p>
+            <p>
+              Foi uma experiência incrível poder fazer esse projeto, pois permitiu poder aprimorar meus conhecimentos sobre o desenvolvimento
+              de sites. Além de aprender a executar um projeto dentro de um prazo determinado. 
+            </p>
+            <p>
+              Foi utilizado as seguintes tecnologias: HTML, CSS, JavaScript.
+            </p>
+            <p>
+              Para visualizar esse projeto:
+              <a href="#" target="_blank">Clique aqui</a>
+            </p>
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-secondary botao-padrao border-0" id="botao-padrao" data-bs-dismiss="modal">Fechar janela</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal-3" tabindex="-3" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Clone do Spotify</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="/assests/projeto-clone-spotify.jpg" class="w-100" alt="Xícara de café especial com desenho de coração feito com leite">
+            <p>
+              Esse projeto foi desenvolvimento durante uma imersão na Alura.
+            </p>
+            <p>
+              Trata-se de um clone do Spotify que possui o vísual similar do site original.
+            </p>
+            <p>
+              Foi um excelente experiência executar esse projeto.
+            </p>
+            <p>
+              Foi utilizado as seguintes tecnologias: HTML, CSS, JavaScript, Bootstrap.
+            </p>
+            <p>
+              Para visualizar:
+              <a href="#" target="_blank">Clique aqui</a>
+            </p>
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-secondary botao-padrao border-0" id="botao-padrao" data-bs-dismiss="modal">Fechar janela</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal-4" tabindex="-4" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Projeto Notes</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="/assests/projeto-notes.jpg" class="w-100" alt="Imagem do projeto Notes">
+            <p>
+              Esse projeto foi desenvolvido durante a imersão com a Rocektseat.
+            </p>
+            <p>
+              Esse projeto trata-se de um bloco de notas, onde é possível escrever tanto de forma convencional por texto, quanto por áudio.
+            </p>
+            <p>
+              Foi utilizado as seguintes tecnologias: HTML, CSS, JavaScript, Bootstrap.
+            </p>
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-secondary botao-padrao border-0" id="botao-padrao" data-bs-dismiss="modal">Fechar janela</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center">
+        <section>
+            <div class="footer p-3">
+                <a href="https://www.linkedin.com/in/amanda-veiga-a9927a303"
+                  target="_blank" class="w-2 p3 mb-3">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/Asantosvp"
+                  target="_blank" class="w-2 p3 mb-3">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+    
+            <div class="footer-text p-3">
+              <p>
+                E-mail para contato: amandasantosdev859@gmail.com
+              </p>
+              <p>
+                2024 <i class="bi bi-c-circle"></i> Desenvolvido por Amanda.
+              </p>
+            </div>
+        </section>
+    </footer>
+
+
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
