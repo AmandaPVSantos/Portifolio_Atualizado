@@ -24,6 +24,17 @@
     margin: 0px 16px 16px 30px; 
 }
 
+.banners input {
+    border-radius: 50px;
+}
+
+.form-select {
+    border-radius: 50px;
+} 
+
+.banners textarea {
+    border-radius: 50px;
+}
 
 /*banner*/
 .banner-1{
@@ -35,8 +46,7 @@
 } 
 
 .banners {
-    width: 100%;
-    height: 100vh;
+    margin-top: 86px;
     background-size: cover; /*para ocupar todo espaço desejado*/
     background-position: center; /*centralizar imagem*/
     background-attachment: fixed; /*para deixar a img fixa*/ /*esse efeito se chama PARALLAX*/
@@ -55,10 +65,11 @@
 #botao-padrao, #botao-padrao-enviar {
     background-color: rgba(252, 163, 190, 255);
     color:black;
+    border-radius: 50px;
 }
     
 #botao-padrao-enviar:hover {
-    background-color: rgb(239, 116, 200);
+    background-color: rgb(252, 209, 216);
 }
 
 /*footer*/

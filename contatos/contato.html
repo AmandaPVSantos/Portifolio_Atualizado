@@ -44,40 +44,46 @@
 
     <main>
       <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
-          <div class="border border-2 rounded p-3">
-            <h3 class="fw-bold p-3">Entre em contato!</h3> 
-            <form id="contato" action="/enviar-email" method="POST">
-              <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
-                <label for="floatingNome">Nome</label>
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="container-1 col-lg-6 colmd-8">
+                <div class="container-1 p-3">
+                  <h3 class="fw-bold p-3">Entre em contato!</h3> 
+                  <form id="contato" action="/enviar-email" method="POST">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                      <label for="floatingNome">Nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingEmail" placeholder="Name@example.com">
+                      <label for="floatingEmail">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="tel" class="form-control" id="floatingTelefone" placeholder=" Telefone">
+                      <label for="floatingTelefone">Telefone</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <select class="form-select mb-3" id="option" aria-label="Default select example">
+                        <option selected class="text-up">Preferência de contato:</option>
+                        <option value="E-mail">E-mail</option>
+                        <option value="Whatsapp">Whatsapp</option>
+                        <option value="Ligação">Ligação</option>
+                      </select>
+                    </div>
+          
+                    <div class="mb-3" id="option">
+                      <label for="exampleFormControlTextarea1" class="form-label">Escreva uma mensagem:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+      
+                    <button type="button"  class="btn botao-padrao-enviar fw-bold w-100 p-3 mt-4 py-3" id="botao-padrao-enviar" >
+                      Enviar
+                    </button>
+                  
+                  </form>
+                </div>
               </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingEmail" placeholder="Name@example.com">
-                <label for="floatingEmail">Email</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="tel" class="form-control" id="floatingTelefone" placeholder=" Telefone">
-                <label for="floatingTelefone">Telefone</label>
-              </div>
-              <div class="form-floating mb-3">
-                <select class="form-select mb-3" aria-label="Default select example">
-                  <option selected class="text-up">Preferência de contato:</option>
-                  <option value="E-mail">E-mail</option>
-                  <option value="Whatsapp">Whatsapp</option>
-                  <option value="Ligação">Ligação</option>
-                </select>
-              </div>
-    
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Escreva uma mensagem:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-
-              <button type="button" class="btn botao-padrao-enviar fw-bold w-100 p-3 mt-4 py-3" id="botao-padrao-enviar" >
-                Enviar
-              </button>
-            
-            </form>
+            </div>
           </div>
       </section>
     </main>
