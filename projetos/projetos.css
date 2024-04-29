@@ -40,9 +40,12 @@
     background-image: url(/assests/img-fundo3.avif);
 } 
 
+/* .banners banner-1 {
+ para mexer no margin
+} */
+
 .banners {
     width: 100%;
-    height: 100vh;
     background-size: cover; /*para ocupar todo espaço desejado*/
     background-position: center; /*centralizar imagem*/
     background-attachment: fixed; /*para deixar a img fixa*/ /*esse efeito se chama PARALLAX*/
