@@ -7,7 +7,7 @@ app.post('/enviar-email', (req, res) => {
         service: 'Gmail',
         auth: {
             user: 'amandasantosdev859@gmail.com',
-            pass: '&pshn$u8BU'
+            pass: ''
         }
     });
 
