@@ -1,1 +1,5 @@
+# Arquivos a serem ignorados pelo Git
 node_modules/
+
+# Arquivo .env
+.env
