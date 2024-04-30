@@ -37,3 +37,26 @@ document.getElementById('botao-padrao-enviar').addEventListener('click', async f
         alert('Erro ao enviar mensagem. Por favor, tente novamente mais tarde.');
     }
 });
+
+
+// Enviar os dados do formulário para o backend
+fetch('/enviar-email', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+})
+.then(response => {
+    if (response.ok) {
+        // Sucesso - fazer algo, como mostrar uma mensagem para o usuário
+        console.log('E-mail enviado com sucesso!');
+    } else {
+        // Se houver um erro no envio do e-mail
+        console.error('Erro ao enviar e-mail.');
+    }
+})
+.catch(error => {
+    // Se houver um erro na solicitação fetch
+    console.error('Erro na solicitação fetch:', error);
+});
