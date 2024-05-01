@@ -1,10 +1,13 @@
-const express = require('express');
-const nodemailer = require('nodemailer');
+import express from 'express';
+import nodemailer from 'nodemailer';
+import cors from 'cors'; // Importe o pacote cors
+
 const app = express();
 const port = process.env.PORT || 3000; // Porta do servidor
 
 // Middleware para lidar com dados JSON
 app.use(express.json());
+app.use(cors()); // Use o middleware de CORS
 
 // Rota para receber dados do formulário e enviar e-mail
 app.post('/enviar-email', (req, res) => {
@@ -15,8 +18,8 @@ app.post('/enviar-email', (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'seu-email@gmail.com',
-            pass: 'sua-senha'
+            user: 'amandasantosdev859@gmail.com',
+            pass: '&pshn$u8BU'
         }
     });
 

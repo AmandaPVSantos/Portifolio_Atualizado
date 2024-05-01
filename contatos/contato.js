@@ -1,4 +1,4 @@
-document.getElementById('botao-padrao-enviar').addEventListener('click', async function(event) {
+document.getElementById('contato').addEventListener('submit', async function(event) {
     event.preventDefault(); // Evita o comportamento padrão do botão (submit do formulário)
     
     // Coleta os dados do formulário
@@ -8,6 +8,15 @@ document.getElementById('botao-padrao-enviar').addEventListener('click', async f
     const preferenciaContato = document.getElementById('option').value;
     const mensagem = document.getElementById('exampleFormControlTextarea1').value;
 
+    // Monta o objeto formData
+    const formData = {
+        nome,
+        email,
+        telefone,
+        preferenciaContato,
+        mensagem
+    };
+
     // Envia os dados para o servidor
     try {
         const response = await fetch('/enviar-email', {
@@ -15,13 +24,7 @@ document.getElementById('botao-padrao-enviar').addEventListener('click', async f
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                nome,
-                email,
-                telefone,
-                preferenciaContato,
-                mensagem
-            })
+            body: JSON.stringify(formData)
         });
 
         if (response.ok) {
@@ -36,27 +39,4 @@ document.getElementById('botao-padrao-enviar').addEventListener('click', async f
         console.error('Erro ao enviar a solicitação:', error);
         alert('Erro ao enviar mensagem. Por favor, tente novamente mais tarde.');
     }
-});
-
-
-// Enviar os dados do formulário para o backend
-fetch('/enviar-email', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(formData)
-})
-.then(response => {
-    if (response.ok) {
-        // Sucesso - fazer algo, como mostrar uma mensagem para o usuário
-        console.log('E-mail enviado com sucesso!');
-    } else {
-        // Se houver um erro no envio do e-mail
-        console.error('Erro ao enviar e-mail.');
-    }
-})
-.catch(error => {
-    // Se houver um erro na solicitação fetch
-    console.error('Erro na solicitação fetch:', error);
 });
