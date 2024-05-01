@@ -51,16 +51,16 @@
                   <h3 class="fw-bold p-3">Entre em contato!</h3> 
                   <form id="contato" action="/enviar-email" method="POST">
                     <div class="form-floating mb-3">
-                      <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
-                      <label for="floatingNome">Nome</label>
+                      <input type="text" class="form-control" id="nome" placeholder="Nome" autocomplete="name">
+                      <label for="nome">Nome</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="email" class="form-control" id="floatingEmail" placeholder="Name@example.com">
-                      <label for="floatingEmail">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Name@example.com">
+                      <label for="email">Email</label>
                     </div>
                     <div class="form-floating mb-3">
-                      <input type="tel" class="form-control" id="floatingTelefone" placeholder=" Telefone">
-                      <label for="floatingTelefone">Telefone</label>
+                      <input type="tel" class="form-control" id="telefone" placeholder=" Telefone">
+                      <label for="telefone">Telefone</label>
                     </div>
                     <div class="form-floating mb-3">
                       <select class="form-select mb-3" id="option" aria-label="Default select example">
@@ -71,12 +71,12 @@
                       </select>
                     </div>
           
-                    <div class="mb-3" id="option">
+                    <div class="mb-3" id="mensagem">
                       <label for="exampleFormControlTextarea1" class="form-label">Escreva uma mensagem:</label>
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
       
-                    <button type="button"  class="btn botao-padrao-enviar fw-bold w-100 p-3 mt-4 py-3" id="botao-padrao-enviar" >
+                    <button type="submit" class="btn botao-padrao-enviar fw-bold w-100 p-3 mt-4 py-3" id="botao-padrao-enviar" >
                       Enviar
                     </button>
                   
