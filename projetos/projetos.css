@@ -1,82 +1,41 @@
-/*navbar*/
-.navbar {
-    background-color: rgba(252, 163, 190, 255);
+.titulo-projetos h2 {
+    font-size: 70px;
+    font-family: "Great Vibes", cursive;
 }
 
-.nav-link {
-    color: #fff;
+.div-principal {
+    background-color: rgba(238, 38, 38, 0.5);
+    margin: 150px 40px 150px 40px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-     color: #fff; 
-}
-
-.navbar-nav .nav-item .nav-link {
-    transition: color 0.3s; /* Define a transição suave da cor */
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #000; 
-}
-
-
-.navbar-brand img{
-    height: 50px;
-    margin: 0px 16px 16px 30px; 
-}
-
-/*banner*/
-
-.section-h2 {
-    margin-top: 86px;
-}
-
-.banner-1{
-    background-image: url(/assests/img-fundo3.avif);
-}  
-
-.banner-2{
-    background-image: url(/assests/img-fundo3.avif);
-} 
-
-/* .banners banner-1 {
- para mexer no margin
+/* .section-h2 {
+    margin-top: 150px;
 } */
 
-.banners {
-    width: 100%;
-    background-size: cover; /*para ocupar todo espaço desejado*/
-    background-position: center; /*centralizar imagem*/
-    background-attachment: fixed; /*para deixar a img fixa*/ /*esse efeito se chama PARALLAX*/
-  }
-
-  .banners-titulo {
-    background-color: rgba(255, 255, 255, 0.5); 
-    padding: 10px; 
+.banners-titulo {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
 }
 
-.banners-titulo h2 {
-    color: #000; /* Define a cor das letras em destaque */
+.banners-titulo h2, .modal-title {
+    color: #000;
+}
+
+.modal-body p{
+    color: #000;
+}
+
+.conteudo-projeto {
+    margin: 30px;
 }
 
 #botao-padrao {
-    background-color: pink;
+    background-color: #000;
+    color: #fff;
 }
 
 #botao-padrao:hover {
-    background-color: purple;
-}
-
-/*footer*/
-.footer {
-    background-color: rgba(252, 163, 190, 255);
-  }
-  
-.footer-text{
-    background-color: rgba(252, 163, 190, 255);
-}
-
-.bi::before, [class*=" bi-"]::before, [class^=bi-]::before {
-    color: black;
-    padding: 10px;
+    background-color: rgba(238, 38, 38, 0.5);
 }

@@ -1,0 +1,260 @@
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-contato {
+        margin: 200px 20px 130px 20px;
+        flex-direction: column; /* Adiciona esta linha para melhor adaptação em telas menores */
+    }
+
+    .titulo-contato h1 {
+        font-size: 3em; /* Ajuste o tamanho da fonte */
+        text-align: center;
+    }
+
+    .paragrafos-contato p,
+    .tipos-de-contato {
+        font-size: 1.2em; /* Ajuste o tamanho da fonte */
+    }
+
+    .conteudo-principal-contato {
+        margin: 5%;
+        padding: 5%;
+    }
+
+    .eMail-contato, .numero-contato {
+        /* margin: 5%; */
+        height: auto; /* Permite que o elemento se ajuste ao conteúdo */
+        padding: 10px; /* Adiciona padding para melhorar o layout */
+    }
+
+    .imagem-div-contato img {
+        margin: 100px 90px 20px 80px;
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        width: 80%; /* Ajusta a largura conforme a tela */
+        border-radius: 30%;
+    }
+}
+
+@media (max-width: 568px) {
+    .main-contato {
+        margin: 3% 1%;
+    }
+
+    .titulo-contato h1 {
+        font-size: 2em; /* Ajuste o tamanho da fonte */
+        text-align: center;
+    }
+
+    .paragrafos-contato p,
+    .tipos-de-contato {
+        font-size: 0.9em; /* Ajuste o tamanho da fonte */
+    }
+
+    .conteudo-principal-contato {
+        margin: 3%;
+        padding: 3%;
+    }
+
+    .eMail-contato, .numero-contato {
+        margin: 3%;
+        height: auto;
+        padding: 5px;
+    }
+
+    .eMail-contato p, .numero-contato p {
+        font-size: 0.8em; /* Ajusta o tamanho da fonte */
+        padding: 0;
+    }
+
+    .imagem-div-contato img {
+        margin: 3% auto;
+        height: auto;
+        width: 90%;
+        border-radius: 10%;
+    }
+}
+
+/* Media Query para telas de 360px */
+@media (max-width: 360px) {
+    .titulo-contato h1 {
+        font-size: 30px; /* Reduzido para telas menores */
+    }
+
+    .paragrafos-contato p {
+        font-size: 18px; /* Reduzido para telas menores */
+    }
+
+    .tipos-de-contato {
+        font-size: 18px; /* Reduzido para telas menores */
+    }
+
+    .conteudo-principal-contato {
+        margin: 10px; /* Reduzido para telas menores */
+    }
+
+    .eMail-contato, .numero-contato {
+        height: 35px; /* Reduzido para telas menores */
+        margin: 5px; /* Reduzido para telas menores */
+    }
+
+    .eMail-contato p, .numero-contato p {
+        font-size: 14px; /* Reduzido para telas menores */
+    }
+
+    .imagem-div-contato img {
+        margin-top: 10px;
+        margin-right: 14px;
+    }
+}
+
+/* Media Query para telas de 390px */
+@media (max-width: 390px) {
+    .titulo-contato h1 {
+        font-size: 35px; /* Ajustado para telas de 390px */
+    }
+
+    .paragrafos-contato p {
+        font-size: 20px; /* Ajustado para telas de 390px */
+    }
+
+    .tipos-de-contato {
+        font-size: 20px; /* Ajustado para telas de 390px */
+    }
+
+    .conteudo-principal-contato {
+        margin: 15px; /* Ajustado para telas de 390px */
+    }
+
+    .eMail-contato, .numero-contato {
+        height: 38px; /* Ajustado para telas de 390px */
+        margin: 8px; /* Ajustado para telas de 390px */
+    }
+
+    .eMail-contato p, .numero-contato p {
+        font-size: 15px; /* Ajustado para telas de 390px */
+    }
+
+    .imagem-div-contato img {
+        margin-top: 15px; /* Ajustado para telas de 390px */
+        margin-right: 12px; /* Ajustado para telas de 390px */
+    }
+}
+
+/* Media Query para telas de 375px */
+@media (max-width: 375px) {
+
+    .main-contato {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .titulo-contato h1 {
+        font-size: 33px; /* Ajustado para telas de 375px */
+    }
+
+    .paragrafos-contato p {
+        font-size: 19px; /* Ajustado para telas de 375px */
+    }
+
+    .tipos-de-contato {
+        font-size: 19px; /* Ajustado para telas de 375px */
+    }
+
+    .conteudo-principal-contato {
+        margin: 15px; /* Ajustado para telas de 375px */
+    }
+
+    .eMail-contato, .numero-contato {
+        height: 37px; /* Ajustado para telas de 375px */
+        margin: 7px; /* Ajustado para telas de 375px */
+    }
+
+    .eMail-contato p, .numero-contato p {
+        font-size: 14px; /* Ajustado para telas de 375px */
+    }
+
+    .imagem-div-contato img {
+        margin-top: 300px;
+        margin-left: 20px;
+        border-radius: 99px;
+    }
+}
+
+/* Media Query para telas de 414px */
+@media (max-width: 414px) {
+
+    .main-contato {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .titulo-contato h1 {
+        font-size: 40px; /* Ajustado para telas de 414px */
+    }
+
+    .paragrafos-contato p {
+        font-size: 22px; /* Ajustado para telas de 414px */
+    }
+
+    .tipos-de-contato {
+        font-size: 22px; /* Ajustado para telas de 414px */
+    }
+
+    .conteudo-principal-contato {
+        margin: 18px; /* Ajustado para telas de 414px */
+    }
+
+    .eMail-contato, .numero-contato {
+        height: 39px; /* Ajustado para telas de 414px */
+        margin: 9px; /* Ajustado para telas de 414px */
+    }
+
+    .eMail-contato p, .numero-contato p {
+        font-size: 16px; /* Ajustado para telas de 414px */
+    }
+
+    .imagem-div-contato img {
+        margin-top: 18px;
+        margin-left: 25px;
+        border-radius: 110px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-contato {
+        margin-top: 160px;
+        margin-bottom: 50px;
+    }
+
+    .titulo-contato h1 {
+        font-size: 25px; /* Reduzido para telas muito pequenas */
+    }
+
+    .paragrafos-contato p {
+        font-size: 16px; /* Reduzido para telas muito pequenas */
+    }
+
+    .tipos-de-contato {
+        font-size: 16px; /* Reduzido para telas muito pequenas */
+    }
+
+    .conteudo-principal-contato {
+        margin: 10px; /* Reduzido para telas muito pequenas */
+    }
+
+    .eMail-contato, .numero-contato {
+        height: 35px; /* Reduzido para telas muito pequenas */
+        margin: 5px; /* Reduzido para telas muito pequenas */
+    }
+
+    .eMail-contato p, .numero-contato p {
+        font-size: 14px; /* Reduzido para telas muito pequenas */
+    }
+
+    .imagem-div-contato img {
+        height: auto; /* Mantém a proporção da imagem */
+        width: 100%; /* Adapta a imagem ao contêiner */
+        margin-top: 10px; /* Ajustado para telas muito pequenas */
+        margin-right: 10px; /* Ajustado para telas muito pequenas */
+        border-radius: 99px;
+    }
+}

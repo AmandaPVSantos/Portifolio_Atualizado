@@ -1,87 +1,63 @@
-.navbar {
-    background-color: rgba(252, 163, 190, 255);
+.main-contato {
+    margin: 190px 45px 100px 45PX;
+    display: flex;
+    background-color: rgba(238, 38, 38, 0.5);
+    border-radius: 20px;
 }
 
-.nav-link {
-    color: #fff;
+.titulo-contato h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-     color: #fff; 
+.paragrafos-contato p {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    text-align: center;
 }
 
-.navbar-nav .nav-item .nav-link {
-    transition: color 0.3s; /* Define a transição suave da cor */
+.tipos-de-contato {
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    text-align: center;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-    color: #000; 
+.section-contato {
+    border-radius: 20px;
 }
 
-
-.navbar-brand img{
-    height: 50px;
-    margin: 0px 16px 16px 30px; 
-}
-
-.banners input {
-    border-radius: 50px;
-}
-
-.form-select {
-    border-radius: 50px;
-} 
-
-.banners textarea {
-    border-radius: 50px;
-}
-
-/*banner*/
-.banner-1{
-    background-image: url(/assests/img-fundo3.avif);
-}  
-
-.banner-2{
-    background-image: url(/assests/img-fundo3.avif);
-} 
-
-.banners {
-    margin-top: 86px;
-    background-size: cover; /*para ocupar todo espaço desejado*/
-    background-position: center; /*centralizar imagem*/
-    background-attachment: fixed; /*para deixar a img fixa*/ /*esse efeito se chama PARALLAX*/
-  }
-
-  .banners-titulo {
-    background-color: rgba(255, 255, 255, 0.5); 
-    padding: 10px; 
-}
-
-.banners-titulo h2 {
-    color: #000; /* Define a cor das letras em destaque */
-}
-
-/*botao padrao enviar*/
-#botao-padrao, #botao-padrao-enviar {
-    background-color: rgba(252, 163, 190, 255);
-    color:black;
-    border-radius: 50px;
-}
-    
-#botao-padrao-enviar:hover {
-    background-color: rgb(252, 209, 216);
-}
-
-/*footer*/
-.footer {
-    background-color: rgba(252, 163, 190, 255);
-  }
-  
-.footer-text{
-    background-color: rgba(252, 163, 190, 255);
-}
-
-.bi::before, [class*=" bi-"]::before, [class^=bi-]::before {
-    color: black;
+.conteudo-principal-contato {
+    margin: 50px;
     padding: 10px;
+    background-color: rgba(238, 38, 38, 0.5);
+    border-radius: 20px;
+}
+
+.container-icons-contato {
+    align-items: center;
+    text-align: center;
+}
+
+.eMail-contato, .numero-contato {
+    background-color: rgba(238, 38, 38, 0.5);
+    margin: 20px;
+    border-radius: 10px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.eMail-contato p, .numero-contato p {
+    padding: 15px;
+    font-size: 20px;
+}
+
+.imagem-div-contato img {
+    margin-top: 50px;
+    margin-right: 45px;
+    margin-left: 60px;
+    height: 570px;
+    width: 550px;
+    border-radius: 170px;
 }

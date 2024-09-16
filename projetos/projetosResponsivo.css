@@ -1,0 +1,31 @@
+/* Media query para telas menores (tablets e smartphones) */
+@media (max-width: 768px) {
+    .titulo-projetos h2 {
+        font-size: 40px;
+    }
+
+    .div-principal {
+        margin: 150px 20px 40px 20px;
+        padding: 10px;
+    }
+
+    .conteudo-projeto {
+        margin: 20px;
+    }
+}
+
+/* Media query para telas muito pequenas (smartphones) */
+@media (max-width: 480px) {
+    .titulo-projetos h2 {
+        font-size: 35px;
+    }
+
+    .div-principal {
+        margin: 150px 10px 40px 10px;
+        padding: 5px;
+    }
+
+    .conteudo-projeto {
+        margin: 10px;
+    }
+}
